@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="#CB000000"
+    tools:context=".main.Fragments.TestBuy.TestSellDetailFragment">
+
+    <View
+        android:id="@+id/view_sellDetail_background"
+        android:layout_width="0dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_view_gray900_background_comitbuy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_sellDetail_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="@id/view_sellDetail_background"
+        app:layout_constraintTop_toTopOf="@id/view_sellDetail_background"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_baseline_close_24"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_namadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/namads"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/view_sellDetail_background"
+        app:layout_constraintStart_toStartOf="@id/view_sellDetail_background"
+        app:layout_constraintTop_toTopOf="@id/view_sellDetail_background" />
+    <TextView
+            android:id="@+id/textview_sellDetail_namadCoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textview_sellDetail_namadName"
+            app:layout_constraintEnd_toEndOf="@id/textview_sellDetail_namadName"
+            app:layout_constraintStart_toStartOf="@id/textview_sellDetail_namadName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/yekan"
+            android:text="@string/namads"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textview_sellDetail_sellDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/solddate"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/view_sellDetail_background"
+        app:layout_constraintStart_toEndOf="@id/textview_sellDetail_buyDateText"
+        app:layout_constraintTop_toBottomOf="@+id/button_sellDetail_delete" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_sellDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/solddate"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view_sellDetail_background"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_sellDateText"
+        app:layout_constraintStart_toStartOf="@+id/textview_sellDetail_sellDateText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_sellDetail_sellDateText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_buyDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/buydate"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/textview_sellDetail_sellDateText"
+        app:layout_constraintStart_toStartOf="@+id/view_sellDetail_background"
+        app:layout_constraintTop_toTopOf="@+id/textview_sellDetail_sellDateText" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_buyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/buydate"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view_sellDetail_background"
+        app:layout_constraintEnd_toEndOf="@id/textview_sellDetail_buyDateText"
+        app:layout_constraintStart_toStartOf="@id/textview_sellDetail_buyDateText"
+        app:layout_constraintTop_toBottomOf="@id/textview_sellDetail_buyDateText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_buyPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/buyprice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/view_sellDetail_background"
+        app:layout_constraintStart_toEndOf="@id/textview_sellDetail_buyPrice"
+        app:layout_constraintTop_toBottomOf="@id/textview_sellDetail_namadCoName"
+        app:layout_goneMarginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_buyPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/buyprice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textview_sellDetail_buyPriceText"
+        app:layout_constraintStart_toStartOf="@+id/view_sellDetail_background"
+        app:layout_constraintTop_toTopOf="@id/textview_sellDetail_buyPriceText" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_sellPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/soldprice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_sellDetail_buyPriceText"
+        app:layout_goneMarginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_sellPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/soldprice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintTop_toTopOf="@+id/textview_sellDetail_sellPriceText" />
+
+
+    <TextView
+        android:id="@+id/textview_sellDetail_profitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/profit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_sellDetail_sellPriceText"
+        app:layout_goneMarginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/profit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintTop_toTopOf="@+id/textview_sellDetail_profitText" />
+
+
+    <TextView
+        android:id="@+id/textview_sellDetail_profitPercentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/profitPercent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_sellDetail_profitText" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_profitPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/profitPercent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintTop_toTopOf="@+id/textview_sellDetail_profitPercentText" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/numberofstocks"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_sellDetail_profitPercentText" />
+
+    <TextView
+        android:id="@+id/textview_sellDetail_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/numberofstocks"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_sellDetail_buyPrice"
+        app:layout_constraintTop_toTopOf="@+id/textview_sellDetail_numberText" />
+
+    <Button
+        android:id="@+id/button_sellDetail_delete"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:text="@string/delete"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        android:fontFamily="@font/yekan"
+        android:background="@drawable/shape_button_background_1"
+        app:layout_constraintEnd_toEndOf="@id/view_sellDetail_background"
+        app:layout_constraintStart_toStartOf="@id/view_sellDetail_background"
+        app:layout_constraintTop_toBottomOf="@id/textview_sellDetail_numberText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

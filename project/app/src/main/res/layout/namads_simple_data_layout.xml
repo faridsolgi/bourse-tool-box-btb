@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_namadsimple_clanim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_view_gray900_background_namads"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_namadsimple_namadname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/viewlinevertical2"
+            app:layout_constraintStart_toStartOf="@id/viewlinevertical1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="بکهنوج" />
+
+        <View
+            android:id="@+id/viewlinevertical1"
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_line_vertical_namads"
+            app:layout_constraintEnd_toStartOf="@+id/textView_namadsimple_namadname"
+            app:layout_constraintStart_toEndOf="@+id/textView_namadsimple_number"
+            app:layout_constraintTop_toTopOf="@+id/textView_namadsimple_namadname" />
+
+
+        <View
+            android:id="@+id/viewlinevertical2"
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_line_vertical_namads"
+            app:layout_constraintEnd_toStartOf="@+id/textView_namadsimple_dateText"
+            app:layout_constraintStart_toEndOf="@+id/textView_namadsimple_namadname"
+            app:layout_constraintTop_toTopOf="@+id/textView_namadsimple_namadname" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_numberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/pe"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@id/textView_namadsimple_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_namadsimple_namadname" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/viewlinevertical1"
+            app:layout_constraintStart_toEndOf="@+id/textView_namadsimple_numberText"
+            app:layout_constraintTop_toTopOf="@+id/textView_namadsimple_namadname"
+            tools:text="24.5" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/eps"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView_namadsimple_date"
+            app:layout_constraintStart_toEndOf="@id/viewlinevertical2"
+            app:layout_constraintTop_toTopOf="@+id/textView_namadsimple_namadname" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView_namadsimple_dateText"
+            app:layout_constraintTop_toTopOf="@+id/textView_namadsimple_namadname"
+            tools:text="560" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_line_horizantal_namads"
+            app:layout_constraintEnd_toStartOf="@+id/viewlinevertical2"
+            app:layout_constraintStart_toEndOf="@+id/viewlinevertical1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_namadname" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_companyName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/yekan"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="صندوق س.آرمان آتيه درخشان مس-س"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_namadsimple_namadname"
+            app:layout_constraintStart_toStartOf="@+id/textView_namadsimple_namadname"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            tools:text="صندوق س.آرمان آتيه درخشان مس-س" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_buyprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/green_500"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView_namadsimple_lastPricePercent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_companyName"
+            tools:text="12,243" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_buyPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/yekan"
+            android:text="@string/LastPrice"
+            android:textColor="@color/grey_300"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_namadsimple_buyprice"
+            app:layout_constraintStart_toStartOf="@+id/textView_namadsimple_buyprice"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_buyprice" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_currentprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/green_500"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView_namadsimple_Profit"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_companyName"
+            tools:text="12,243" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_currentPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/yekan"
+            android:text="@string/LastDeal"
+            android:textColor="@color/grey_300"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_namadsimple_currentprice"
+            app:layout_constraintStart_toStartOf="@+id/textView_namadsimple_currentprice"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_currentprice" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_Profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView_namadsimple_currentprice"
+            app:layout_constraintStart_toEndOf="@id/textView_namadsimple_lastPricePercent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_companyName"
+            tools:text="4.63%"
+            tools:textColor="@color/green_500" />
+
+        <TextView
+            android:id="@+id/textView_namadsimple_lastPricePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/textView_namadsimple_Profit"
+            app:layout_constraintStart_toEndOf="@+id/textView_namadsimple_buyprice"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_companyName"
+            tools:text="2.54%"
+            tools:textColor="@color/red_500" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/button_namadSimple_FAV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:lottie_rawRes="@raw/fav_anim"
+            app:layout_constraintBottom_toTopOf="@+id/textView_namadsimple_currentprice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_namadsimple_companyName"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namadsimple_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

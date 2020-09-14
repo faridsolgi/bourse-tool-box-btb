@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_mainActivity"
+    tools:context=".main.MainActivity">
+    <!--fragggggggment splash-->
+
+    <!--end of  bazar data-->
+    <!--arze avalie-->
+<View
+    android:id="@+id/view_main_status"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+
+    />
+    <TextView
+        android:id="@+id/textview_main_statustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/yekan"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintTop_toTopOf="@id/view_main_status"
+        app:layout_constraintBottom_toBottomOf="@id/view_main_status"
+        app:layout_constraintEnd_toEndOf="@id/view_main_status"
+        app:layout_constraintStart_toStartOf="@id/view_main_status"/>
+    <TextView
+        android:id="@+id/textView_main_apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/b_titr"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/view_main_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_main_status" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main_arzecl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toTopOf="@id/view_main_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_main_status">
+
+        <View
+            android:id="@+id/view_main_sec"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_max="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_view_countdown_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_main_min"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <View
+            android:id="@+id/view_main_min"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/shape_view_countdown_10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_sec"
+            app:layout_constraintEnd_toStartOf="@+id/view_main_sec"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view_main_hours"
+            app:layout_constraintTop_toTopOf="@+id/view_main_sec" />
+
+        <View
+            android:id="@+id/view_main_hours"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/shape_view_countdown_10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_min"
+            app:layout_constraintEnd_toStartOf="@+id/view_main_min"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view_main_day"
+            app:layout_constraintTop_toTopOf="@+id/view_main_min" />
+
+        <View
+            android:id="@+id/view_main_day"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/shape_view_countdown_10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_hours"
+            app:layout_constraintEnd_toStartOf="@+id/view_main_hours"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view_main_hours" />
+
+        <TextView
+            android:id="@+id/textView_counttimer__daynumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/b_titr"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_day"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_day"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="@+id/view_main_day"
+            app:layout_constraintTop_toTopOf="@+id/view_main_day"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_daytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/yekan"
+            android:text="روز"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_day"
+            app:layout_constraintEnd_toEndOf="@+id/textView_counttimer__daynumber"
+            app:layout_constraintStart_toStartOf="@+id/textView_counttimer__daynumber"
+            app:layout_constraintTop_toTopOf="@+id/view_main_day"
+            app:layout_constraintVertical_bias="0.95"
+            tools:text="روز" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_hournumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/b_titr"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_counttimer__daynumber"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_hours"
+            app:layout_constraintStart_toStartOf="@+id/view_main_hours"
+            app:layout_constraintTop_toTopOf="@+id/textView_counttimer__daynumber"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_hourtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan"
+            android:text="ساعت"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_counttimer_daytext"
+            app:layout_constraintEnd_toEndOf="@+id/textView_counttimer_hournumber"
+            app:layout_constraintStart_toStartOf="@+id/textView_counttimer_hournumber"
+            app:layout_constraintTop_toTopOf="@+id/textView_counttimer_daytext"
+            app:layout_constraintVertical_bias="0.95"
+            tools:text="ساعت" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_minnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/b_titr"
+            android:text="45"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_counttimer_hournumber"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_min"
+            app:layout_constraintStart_toStartOf="@+id/view_main_min"
+            app:layout_constraintTop_toTopOf="@+id/textView_counttimer_hournumber"
+            tools:text="45" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_mintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan"
+            android:text="دقیقه"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_counttimer_hourtext"
+            app:layout_constraintEnd_toEndOf="@+id/textView_counttimer_minnumber"
+            app:layout_constraintStart_toStartOf="@+id/textView_counttimer_minnumber"
+            app:layout_constraintTop_toTopOf="@+id/textView_counttimer_hourtext"
+            tools:text="دقیقه" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_secnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/b_titr"
+            android:text="28"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_counttimer_minnumber"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_sec"
+            app:layout_constraintStart_toStartOf="@+id/view_main_sec"
+            app:layout_constraintTop_toTopOf="@+id/textView_counttimer_minnumber"
+            tools:text="28" />
+
+        <TextView
+            android:id="@+id/textView_counttimer_sectext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan"
+            android:text="ثانیه"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_counttimer_mintext"
+            app:layout_constraintEnd_toEndOf="@+id/textView_counttimer_secnumber"
+            app:layout_constraintStart_toStartOf="@+id/textView_counttimer_secnumber"
+            app:layout_constraintTop_toTopOf="@+id/textView_counttimer_mintext"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="ثانیه" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/b_titr"
+            android:text="عرضه اولیه"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/view_main_sec"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_sec"
+            tools:text="عرضه اولیه" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/b_titr"
+            android:text="ولساپا"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/view_main_day"
+            app:layout_constraintStart_toStartOf="@+id/view_main_day"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="ولساپا" />
+
+        <!--end of arze avalie-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--main view-->
+
+    <View
+        android:id="@+id/view_main_background"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_view_black_background_primry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_main_arzecl" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@id/textView_main_negahbazar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/view_main_background"
+        app:layout_constraintStart_toStartOf="@id/view_main_background"
+        app:layout_constraintTop_toTopOf="@id/view_main_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_main_bottomcl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/Button_main_namads"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_1"
+                android:fontFamily="@font/yekan"
+                android:text="@string/namads"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toStartOf="@+id/button_main_news"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cl_main_bottomcl" />
+
+            <Button
+                android:id="@+id/button_main_news"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_2"
+                android:fontFamily="@font/yekan"
+                android:text="@string/news"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Button_main_namads"
+                app:layout_constraintTop_toTopOf="@id/Button_main_namads" />
+
+
+            <Button
+                android:id="@+id/button_main_testBuy"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_3"
+                android:fontFamily="@font/yekan"
+                android:text="@string/testbuy"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toStartOf="@id/button_main_calc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Button_main_namads" />
+
+            <Button
+                android:id="@+id/button_main_calc"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_7"
+                android:fontFamily="@font/yekan"
+                android:text="@string/calclator"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_main_testBuy"
+                app:layout_constraintTop_toTopOf="@id/button_main_testBuy" />
+
+            <Button
+                android:id="@+id/button_main_portfolio"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_8"
+                android:text="@string/protfolio"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toStartOf="@id/button_main_learn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_main_testBuy" />
+
+            <Button
+                android:id="@+id/button_main_learn"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_6"
+                android:text="@string/learn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_main_portfolio"
+                app:layout_constraintTop_toTopOf="@id/button_main_portfolio" />
+
+            <Button
+                android:id="@+id/button_main_filter"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_1"
+                android:text="@string/filter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toStartOf="@+id/button_main_About"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_main_portfolio" />
+
+            <Button
+                android:id="@+id/button_main_About"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button_background_2"
+                android:text="@string/AboutUs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize_18Sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button_main_filter"
+                app:layout_constraintTop_toTopOf="@id/button_main_filter" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <!--start of  bazar data-->
+    <TextView
+        android:id="@+id/textView_main_negahbazar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/main_Bazar_dar_yek_negah"
+        android:textColor="@color/grey_200"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_main_background"
+        app:layout_constraintEnd_toEndOf="@id/view_main_background"
+        app:layout_constraintStart_toStartOf="@id/view_main_background"
+        app:layout_constraintTop_toBottomOf="@id/textView_main_negahbazar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_main_bazarcl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textView_main_bazarstatusnativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/cl_main_bazarcl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView_main_bazarstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_shakheskol"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_bazarstatusnativ"
+                tools:text="بسته" />
+
+
+            <TextView
+                android:id="@+id/textView_main_bazarstatustimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView_main_bazarstatus"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_bazarstatus"
+                tools:text="14:48:26" />
+
+
+            <!--shakhes kol-->
+            <TextView
+                android:id="@+id/textView_main_shakheskolnativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_bazarstatusnativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_bazarstatusnativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_shakheskol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_shakheskolhamvazn"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_shakheskolnativ"
+                tools:text="بسته" />
+
+            <TextView
+                android:id="@+id/textView_main_shakheskolchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView_main_shakheskol"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_shakheskol"
+                tools:text="14:48:26" />
+
+            <TextView
+                android:id="@+id/textView_main_shakheskolchangepersent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView_main_shakheskolchange"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_shakheskolchange"
+                tools:text="14:48:26" />
+            <!--shakhes hamvazn-->
+            <TextView
+                android:id="@+id/textView_main_shakheskolhamvaznnativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_shakheskolnativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_shakheskolnativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_shakheskolhamvazn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView_main_shakheskolhamvaznnativ"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_shakheskolhamvaznnativ"
+                tools:text="بسته" />
+
+            <TextView
+                android:id="@+id/textView_main_shakheskolhamvaznchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView_main_shakheskolhamvazn"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_shakheskolhamvazn"
+                tools:text="14:48:26" />
+
+            <TextView
+                android:id="@+id/textView_main_shakheskolhamvaznchangepersent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView_main_shakheskolhamvaznchange"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_shakheskolhamvaznchange"
+                tools:text="14:48:26" />
+            <!--arzesh bazar -->
+            <TextView
+                android:id="@+id/textView_main_arzeshbazarnativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_shakheskolhamvaznnativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_shakheskolhamvaznnativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_arzeshbazar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_shakheskolhamvazn"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_arzeshbazarnativ"
+                tools:text="بسته" />
+
+
+            <!--etelaat ghimat-->
+            <TextView
+                android:id="@+id/textView_main_priceinfonativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_arzeshbazarnativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_arzeshbazarnativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_priceinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_arzeshbazar"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_priceinfonativ"
+                tools:text="بسته" />
+
+            <!--tedad moamelat-->
+            <TextView
+                android:id="@+id/textView_main_numofexchangenativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_priceinfonativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_priceinfonativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_numofexchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_priceinfo"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_numofexchangenativ"
+                tools:text="بسته" />
+            <!--arzesh moamelat ghimat-->
+            <TextView
+                android:id="@+id/textView_main_valueofexchangenativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_numofexchangenativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_numofexchangenativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_valueofexchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_numofexchange"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_valueofexchangenativ"
+                tools:text="بسته" />
+            <!--halm moamelat-->
+            <TextView
+                android:id="@+id/textView_main_volofexchangenativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yekan"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_valueofexchangenativ"
+                app:layout_constraintTop_toBottomOf="@id/textView_main_valueofexchangenativ" />
+
+
+            <TextView
+                android:id="@+id/textView_main_volofexchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_main_valueofexchange"
+                app:layout_constraintTop_toTopOf="@+id/textView_main_volofexchangenativ"
+                tools:text="بسته" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_main_status"
+        >
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--end of main view-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

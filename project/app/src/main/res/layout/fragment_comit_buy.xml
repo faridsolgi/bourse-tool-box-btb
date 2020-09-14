@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentColorPrimary"
+    android:clickable="true"
+    tools:context=".main.Fragments.TestBuy.comitBuyFragment">
+
+    <View
+        android:id="@+id/viewcomitbuy"
+        android:layout_width="0dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_view_gray900_background_comitbuy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_comitBuy_price"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_edittext_background"
+        android:fontFamily="@font/yekan"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:maxLength="10"
+        android:paddingEnd="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@id/viewcomitbuy"
+        app:layout_constraintStart_toStartOf="@id/viewcomitbuy"
+        app:layout_constraintTop_toBottomOf="@+id/textView_comitBuyFragment_namadName" />
+
+    <EditText
+        android:id="@+id/editText_comitBuy_Amount"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_edittext_background"
+        android:fontFamily="@font/yekan"
+        android:hint="@string/volume"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:maxLength="10"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@id/viewcomitbuy"
+        app:layout_constraintStart_toStartOf="@id/viewcomitbuy"
+        app:layout_constraintTop_toBottomOf="@+id/textView_comitBuy_upprice" />
+
+    <TextView
+        android:id="@+id/textView_comitBuy_fullAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="قیمت تمام شده"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/viewcomitbuy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/viewcomitbuy"
+        app:layout_constraintTop_toBottomOf="@+id/editText_comitBuy_Amount" />
+
+
+
+    <TextView
+        android:id="@+id/textView_comitBuy_fullAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="73246789"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/textView_comitBuy_fullAmountText"
+        app:layout_constraintStart_toStartOf="@+id/textView_comitBuy_fullAmountText"
+        app:layout_constraintTop_toBottomOf="@id/textView_comitBuy_fullAmountText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textView_comitBuy_fullAmount"
+        app:layout_constraintEnd_toStartOf="@id/textView_comitBuy_fullAmount"
+        android:layout_marginEnd="16dp"
+        android:text="@string/rial"
+        android:textColor="@color/white"
+        android:fontFamily="@font/yekan"
+
+        />
+
+    <Button
+        android:id="@+id/button_comitBuy_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_button_background_1"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewcomitbuy"
+        app:layout_constraintEnd_toEndOf="@+id/viewcomitbuy"
+        app:layout_constraintStart_toEndOf="@+id/button_comitBuy_buy"
+        app:layout_constraintTop_toBottomOf="@+id/textView_comitBuy_fullAmount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_comitBuy_buy"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_button_background_6"
+        android:text="@string/buy"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewcomitbuy"
+        app:layout_constraintEnd_toStartOf="@+id/button_comitBuy_cancel"
+        app:layout_constraintStart_toEndOf="@+id/viewcomitbuy"
+        app:layout_constraintStart_toStartOf="@+id/viewcomitbuy"
+        app:layout_constraintTop_toTopOf="@+id/button_comitBuy_cancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_comitBuyFragment_namadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_comitBuyFragment_testbuy"
+        app:layout_constraintStart_toStartOf="@+id/textView_comitBuyFragment_testbuy"
+        app:layout_constraintTop_toBottomOf="@+id/textView_comitBuyFragment_testbuy" />
+
+    <TextView
+        android:id="@+id/textView_comitBuyFragment_testbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/testbuy"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewcomitbuy"
+        app:layout_constraintStart_toStartOf="@+id/viewcomitbuy"
+        app:layout_constraintTop_toTopOf="@+id/viewcomitbuy" />
+
+    <TextView
+        android:id="@+id/textView_comitBuy_upprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="TextView"
+        android:textColor="@color/blue_500"
+        app:layout_constraintEnd_toEndOf="@+id/editText_comitBuy_price"
+        app:layout_constraintTop_toBottomOf="@+id/editText_comitBuy_price" />
+
+    <TextView
+        android:id="@+id/textView_comitBuy_downprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="TextView"
+        android:textColor="@color/blue_500"
+        app:layout_constraintStart_toStartOf="@+id/editText_comitBuy_price"
+        app:layout_constraintTop_toBottomOf="@+id/editText_comitBuy_price" />
+
+    <Button
+        android:id="@+id/button_comitBuy_negtivOne"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_baseline_exposure_neg_1_32"
+        app:layout_constraintBottom_toTopOf="@+id/editText_comitBuy_price"
+        app:layout_constraintEnd_toEndOf="@+id/textView_comitBuy_downprice"
+        app:layout_constraintStart_toStartOf="@+id/textView_comitBuy_downprice" />
+
+    <Button
+        android:id="@+id/button_comitBuy_plusOne"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_baseline_exposure_plus_1_32"
+        app:layout_constraintBottom_toTopOf="@+id/editText_comitBuy_price"
+        app:layout_constraintEnd_toEndOf="@+id/textView_comitBuy_upprice"
+        app:layout_constraintStart_toStartOf="@+id/textView_comitBuy_upprice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

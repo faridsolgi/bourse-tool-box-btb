@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:foregroundTint="@color/black"
+    tools:context=".main.Fragments.Namads.NamadsMainFragment">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_view_black_background_primry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadList_titleoffragment" />
+
+    <TextView
+        android:id="@+id/textView_NamadList_titleoffragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/b_titr"
+        android:text="@string/namads"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_Namadlist_RV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progressbar_NamadList_progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:layout_constraintBottom_toBottomOf="@+id/RV_Namadlist_RV"
+        app:layout_constraintEnd_toEndOf="@+id/RV_Namadlist_RV"
+        app:layout_constraintStart_toStartOf="@+id/RV_Namadlist_RV"
+        app:layout_constraintTop_toTopOf="@+id/RV_Namadlist_RV" />
+
+    <Button
+        android:id="@+id/button_NamadList_retry"
+        android:layout_width="48dp"
+        android:visibility="invisible"
+        android:background="@drawable/retry_icon_white"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/RV_Namadlist_RV"
+        app:layout_constraintEnd_toEndOf="@+id/RV_Namadlist_RV"
+        app:layout_constraintStart_toStartOf="@+id/RV_Namadlist_RV"
+        app:layout_constraintTop_toTopOf="@+id/RV_Namadlist_RV" />
+
+    <Button
+        android:id="@+id/button_NamadList_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadList_titleoffragment" />
+
+    <Button
+        android:id="@+id/button_NamadList_search"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ic_baseline_search_24"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadList_titleoffragment" />
+
+    <EditText
+        android:id="@+id/editText_NamadList_searchBox"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/yekan"
+        android:inputType="textFilter"
+        android:paddingStart="32dp"
+        android:paddingEnd="36dp"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/button_NamadList_search"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadList_titleoffragment" />
+
+    <Button
+        android:id="@+id/button_NamadList_searchClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_baseline_close_24"
+        android:backgroundTint="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_NamadList_searchBox"
+        app:layout_constraintStart_toStartOf="@+id/editText_NamadList_searchBox"
+        app:layout_constraintTop_toTopOf="@+id/editText_NamadList_searchBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

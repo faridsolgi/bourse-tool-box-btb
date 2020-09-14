@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">جعبه ابزار بورس</string>
+    <string name="main_Bazar_dar_yek_negah">بازار امروز بورس در یک نگاه</string>
+    <string name="main_bazar_status">وضعیت بازار</string>
+    <string name="news">اخبار اقتصادی</string>
+    <string name="buydate">تاریخ خرید</string>
+    <string name="solddate">تاریخ فروش</string>
+    <string name="price">قیمت</string>
+    <string name="delete">حذف</string>
+    <string name="sarBsar">قیمت سر به سر</string>
+    <string name="Amount">مبلغ</string>
+    <string name="profit">سود یا زیان</string>
+    <string name="profitPercent">درصد سود یا زیان</string>
+    <string name="cancel">لغو</string>
+
+    <string name="currentPrice">قیمت کنونی</string>
+    <string name="numberofstocks">تعداد سهام</string>
+    <string name="load_data_problem">دریافت اطلاعات با مشکل روبرو شده است لطفا اینترنت خود را چک کنید...</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="namads">نمادها</string>
+    <string name="protfolio">پرتفوی</string>
+    <string name="calclator">ماشین حساب بورس</string>
+    <string name="buyprice">قیمت خرید</string>
+    <string name="todayPrice">قیمت روز</string>
+    <string name="soldprice">قیمت فروش</string>
+    <string name="currentprice">قیمت فروش</string>
+    <string name="search">جستجو...</string>
+    <string name="sell">فروش</string>
+    <string name="sold">فروخته شده</string>
+    <string name="buy">خرید</string>
+    <string name="numofexchange">تعداد معاملات</string>
+    <string name="volofexchange">حجم معاملات</string>
+    <string name="valueofexchange">ارزش معاملات</string>
+    <string name="today">امروز </string>
+    <string name="LastPrice">فیمت پایانی </string>
+    <string name="LastDeal">آخرین معامله</string>
+    <string name="testbuy">خرید آزمایشی</string>
+    <string name="pe">PE :</string>
+    <string name="eps">EPS :</string>
+    <string name="peـ">PE</string>
+    <string name="epsـ">EPS</string>
+    <string name="firstprice">اولین قیمت</string>
+    <string name="yesterday">دیروز</string>
+    <string name="low">بیشترین</string>
+    <string name="volume">حجم</string>
+    <string name="high">کمترین</string>
+    <string name="soodbakarmozd">سود با کسر کارکزد</string>
+    <string name="calc">محاسبه</string>
+    <string name="sodbedonkarmozd">سود بدون کسر کارکزد</string>
+    <string name="bahayTamamShode">بهای تمام شده</string>
+    <string name="KhalesArzeshRoz">خالص ارزش روز</string>
+    <string name="AverageEndPrice">میانگین قیمت تمام شده</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="learn">آموزش</string>
+    <string name="close">خروج</string>
+    <string name="loremDescription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</string>
+    <string name="confirm">تایید</string>
+    <string name="mablaghBuy">مبلغ خرید</string>
+    <string name="mablaghSold">مبلغ فروش</string>
+    <string name="BuyCarmozd">کارمزد خرید </string>
+    <string name="SoldCarmozd">کارمزد فروش</string>
+    <string name="mablagh">مبلغ</string>
+    <string name="priceOneExchange">قیمت هر سهم</string>
+    <string name="numofexchangeUCanBuy">تعداد سهام قابل خرید</string>
+    <string name="views">بازدید</string>
+    <string name="loremdate">14  مهر  ۱۳۹۹</string>
+    <string name="errorConnection">خطا لطفا اینترنت خود را چک کنید و دوباره امتحان کنید</string>
+    <string name="rating">ثبت نظر</string>
+    <string name="ratingus">نظر شما</string>
+    <string name="yourRateIsImportant">نظر شما برای ما مهم است !\n لطفا نظر خود را ثبت کنید</string>
+    <string name="update">بروز رسانی</string>
+    <string name="noTnxDontUpdate">خیر , بستن برنامه</string>
+    <string name="newUpdate">بروز رسانی جدید رسید</string>
+    <string name="newUpdateDecription">"لطفا برای استفاده از امکانات جدید و رفع مشکلات احتمالی نرم افزار را به جدید ترین نسخه بروز رسانی کنید "</string>
+    <string name="allpriceIsrial">توجه : تمامی قیمت ها به ریال می باشد.</string>
+    <string name="rial">ریال</string>
+    <string name="youCantBuy">نمی توانید سهام بخرید</string>
+    <string name="filter">فیلتر بورسی</string>
+    <string name="AboutUs">درباره ما</string>
+    <string name="AboutUs_description">نرم افزار جعبه ابزار بورس , ابزار کاملی جهت بررسی بازار و همچنین آموزش و تحلیل بازار سرمایه است .\n
+تیم توسعه نرم افزار در تلاش است تا هر روز این نرم افزار را به بهترین شکل ممکن بروز رسانی نماید .\n
+منابع :
+    </string>
+    <string name="Aparat">آپارات</string>
+    <string name="Tsetmc">سازمان بورس و اوراق بهادار</string>
+    <string name="Isna">خبرگزاری ایسنا</string>
+
+    <string-array name="spinnerString">
+        <item>قدرت خرید</item>
+        <item>سود و زیان</item>
+        <item>خرید و فروش پله ای</item>
+        <item>افزایش سرمایه</item>
+    </string-array>
+</resources>

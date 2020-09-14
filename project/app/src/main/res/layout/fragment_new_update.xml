@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#CB000000"
+    android:clickable="true"
+    tools:context=".main.Fragments.NewUpdateFragment">
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintWidth_max="350dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/shape_view_background_rating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rocket"
+        app:layout_constraintBottom_toTopOf="@id/textView_update_title"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <TextView
+        android:id="@+id/textView_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/b_titr"
+        android:text="@string/newUpdate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        app:layout_constraintBottom_toTopOf="@id/textView_update_description"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <TextView
+        android:id="@+id/textView_update_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/yekan"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/newUpdateDecription"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_submit"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/textView_update_title" />
+
+    <Button
+        android:id="@+id/button_update_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_button_background_1"
+        android:fontFamily="@font/yekan"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        app:layout_constraintBottom_toTopOf="@id/textview_update_dontupdate"
+        app:layout_constraintEnd_toEndOf="@id/view8"
+        app:layout_constraintStart_toStartOf="@id/view8"
+        app:layout_constraintTop_toBottomOf="@id/textView_update_description" />
+
+    <TextView
+        android:id="@+id/textview_update_dontupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/noTnxDontUpdate"
+        android:textColor="@color/blue_800"
+        app:layout_constraintBottom_toBottomOf="@id/view8"
+        app:layout_constraintEnd_toEndOf="@id/view8"
+
+        app:layout_constraintStart_toStartOf="@id/view8"
+        app:layout_constraintTop_toBottomOf="@id/button_update_submit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

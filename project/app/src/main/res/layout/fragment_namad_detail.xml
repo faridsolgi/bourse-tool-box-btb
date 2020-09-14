@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".main.Fragments.Namads.NamadDetailFragment">
+
+
+    <Button
+        android:id="@+id/button_NamadDetail_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_NamadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/b_titr"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="اسم نماد" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_NamadCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_NamadName"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_NamadName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_NamadName"
+        tools:text="نام شرکت نماد بورسی" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_view_black_background_primry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_NamadCompanyName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastDealText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/LastDeal"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_sellText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/sell"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_NamadDetail_lastDealText"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_lastDealText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_buyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/buy"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_NamadDetail_lastDealText"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_lastDealText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastDeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_lastDealText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_lastDealText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_lastDealText"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastDealChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/textView_NamadDetail_lastDeal"
+        app:layout_constraintTop_toTopOf="@id/textView_NamadDetail_lastDeal"
+        tools:text="(3420)" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastDealChangePercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_NamadDetail_lastDeal"
+        app:layout_constraintTop_toTopOf="@id/textView_NamadDetail_lastDeal"
+        tools:text="4 %" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_sellText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_sellText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_sellText"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_buyText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_buyText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_buyText"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/LastPrice"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_lastDeal" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_LowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/low"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_NamadDetail_lastPriceText"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_lastPriceText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_HighText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/high"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_NamadDetail_lastPriceText"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_lastPriceText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_LowText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_LowText"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_lastPrice"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_HighText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_HighText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_HighText"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_lastPriceText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_lastPriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_lastPriceText"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastPriceChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/textView_NamadDetail_lastPrice"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_lastPrice"
+        tools:text="(3420)" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_lastPriceChangePercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_NamadDetail_lastPrice"
+        app:layout_constraintTop_toTopOf="@id/textView_NamadDetail_lastPrice"
+        tools:text="4 %" />
+
+
+    <Button
+        android:id="@+id/button_namadDetail_testbuy"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_button_background_5"
+        android:text="@string/testbuy"
+        android:textColor="@color/white"
+        android:fontFamily="@font/yekan"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_lastPrice" />
+
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_numOfExchangeText"
+        android:layout_width="71dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/numofexchange"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_NamadDetail_volOfExchangeText"
+        app:layout_constraintTop_toBottomOf="@+id/button_namadDetail_testbuy" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_volOfExchangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/volofexchange"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_NamadDetail_numOfExchangeText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_numOfExchangeText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_numOfExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_numOfExchangeText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_numOfExchangeText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_numOfExchangeText"
+        tools:text="32000" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_volOfExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_volOfExchangeText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_volOfExchangeText"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_numOfExchange"
+        tools:text="32000" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_valueOfExchangetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/valueofexchange"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_volOfExchange" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_valueOfExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_valueOfExchangetext"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_valueOfExchangetext"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_valueOfExchangetext"
+        tools:text="32000" />
+
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_firstpriceText"
+        android:layout_width="71dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/firstprice"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_NamadDetail_pastdaytext"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_valueOfExchange" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_pastdaytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/yesterday"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_NamadDetail_firstpriceText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_firstpriceText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_pastday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_pastdaytext"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_pastdaytext"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_pastdaytext"
+        tools:text="32000" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_firstPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_firstpriceText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_firstpriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_firstpriceText"
+        tools:text="32000" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_PEText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/peـ"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_pastdaytext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_pastdaytext"
+        app:layout_constraintTop_toTopOf="@+id/textView_NamadDetail_EPSText" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_EPSText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/epsـ"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_firstpriceText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_firstpriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_firstPrice" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_pe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_PEText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_PEText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_PEText"
+        tools:text="31,325" />
+
+    <TextView
+        android:id="@+id/textView_NamadDetail_EPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_NamadDetail_EPSText"
+        app:layout_constraintStart_toStartOf="@+id/textView_NamadDetail_EPSText"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NamadDetail_EPSText"
+        tools:text="31,325" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

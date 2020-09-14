@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="#CB000000"
+    android:layout_height="match_parent"
+    tools:context=".main.Fragments.ConfirmDialogFragment">
+
+    <View
+        android:id="@+id/view_confirmDialog_viewbackground"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_view_gray900_background_comitbuy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_confirmDialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_confirmDialog_cancel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view_confirmDialog_viewbackground"
+        app:layout_constraintTop_toTopOf="@id/view_confirmDialog_viewbackground"
+        tools:text="تست تست تست ؟" />
+
+    <TextView
+        android:id="@+id/textview_confirmDialog_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/yekan"
+        android:lineSpacingExtra="8sp"
+        android:textColor="@color/blue_grey_100"
+        app:layout_constraintBottom_toTopOf="@+id/button_confirmDialog_confirm"
+        app:layout_constraintEnd_toEndOf="@id/textview_confirmDialog_title"
+        app:layout_constraintStart_toStartOf="@+id/button_confirmDialog_confirm"
+        app:layout_constraintTop_toBottomOf="@id/textview_confirmDialog_title"
+        tools:text="@string/loremDescription" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_confirmDialog_confirm"
+        android:text="@string/confirm"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/yekan"
+        android:background="@drawable/shape_button_background_6"
+        app:layout_constraintStart_toStartOf="@id/view_confirmDialog_viewbackground"
+        app:layout_constraintEnd_toStartOf="@id/button_confirmDialog_cancel"
+        app:layout_constraintBottom_toBottomOf="@id/view_confirmDialog_viewbackground"
+        android:layout_marginBottom="16dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_confirmDialog_cancel"
+        android:text="@string/cancel"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/yekan"
+        app:layout_constraintEnd_toEndOf="@id/view_confirmDialog_viewbackground"
+        android:background="@drawable/shape_button_background_1"
+        app:layout_constraintBottom_toBottomOf="@id/button_confirmDialog_confirm"
+        app:layout_constraintStart_toEndOf="@id/button_confirmDialog_confirm"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

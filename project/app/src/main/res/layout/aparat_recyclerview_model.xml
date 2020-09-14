@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/cl_aparatModel_cl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_aparatModel_imageview"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/erorr404"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textview_aparatModel_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan"
+            android:text="14:65"
+           android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:background="@drawable/shape_view_aparat_time_background"
+            android:textColor="@color/white"
+            android:textSize="@dimen/buttonTextSize_18Sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/imageView_aparatModel_imageview"
+            app:layout_constraintStart_toStartOf="@id/imageView_aparatModel_imageview" />
+
+        <TextView
+            android:id="@+id/textview_aparatModel_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:lineSpacingExtra="5sp"
+            android:ellipsize="end"
+            android:fontFamily="@font/yekan"
+            android:maxLines="3"
+            android:text="@string/loremDescription"
+            android:textColor="@color/white"
+            android:textSize="@dimen/buttonTextSize_18Sp"
+            app:layout_constraintBottom_toTopOf="@id/textview_aparatModel_visitCNT"
+            app:layout_constraintEnd_toStartOf="@id/imageView_aparatModel_imageview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageView_aparatModel_imageview" />
+
+        <TextView
+            android:id="@+id/textview_aparatModel_visitCNT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan"
+            android:text="200"
+            android:textColor="@color/grey_200"
+            app:layout_constraintBottom_toTopOf="@+id/textview_aparatModel_date"
+            app:layout_constraintEnd_toEndOf="@id/textview_aparatModel_title"
+            app:layout_constraintTop_toBottomOf="@id/textview_aparatModel_title" />
+        <TextView
+            android:id="@+id/textview_aparatModel_visittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_200"
+            android:text="@string/views"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="@id/textview_aparatModel_visitCNT"
+            app:layout_constraintEnd_toStartOf="@id/textview_aparatModel_visitCNT"
+            android:fontFamily="@font/yekan"/>
+
+
+        <TextView
+            android:id="@+id/textview_aparatModel_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/yekan"
+            app:layout_constraintTop_toBottomOf="@id/textview_aparatModel_visitCNT"
+            android:text="@string/loremdate"
+            android:textColor="@color/grey_200"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_aparatModel_imageview"
+            app:layout_constraintEnd_toEndOf="@+id/textview_aparatModel_visitCNT"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_baseline_play_circle_filled_24"
+            android:backgroundTint="#6B000000"
+            app:layout_constraintBottom_toBottomOf="@id/imageView_aparatModel_imageview"
+            app:layout_constraintEnd_toEndOf="@id/imageView_aparatModel_imageview"
+            app:layout_constraintStart_toStartOf="@id/imageView_aparatModel_imageview"
+            app:layout_constraintTop_toTopOf="@id/imageView_aparatModel_imageview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

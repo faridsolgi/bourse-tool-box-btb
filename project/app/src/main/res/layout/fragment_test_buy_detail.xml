@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#CB000000"
+    tools:context=".main.Fragments.TestBuy.TestBuyDetailFragment"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/view_testbuydetail_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/shape_view_gray900_background_comitbuy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_namadname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/namads"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/view_testbuydetail_background"
+        app:layout_constraintStart_toStartOf="@id/view_testbuydetail_background"
+        app:layout_constraintTop_toTopOf="@id/view_testbuydetail_background" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_namadconame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/namads"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/textview_testbuydetail_namadname"
+        app:layout_constraintStart_toStartOf="@id/textview_testbuydetail_namadname"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_namadname" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_profitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/profit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/view_testbuydetail_background"
+        app:layout_constraintStart_toEndOf="@id/textview_testbuydetail_profit"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_namadconame" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/profit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textview_testbuydetail_profitText"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="@+id/view_testbuydetail_background"
+        app:layout_constraintTop_toTopOf="@id/textview_testbuydetail_profitText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_sarbsarpriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/sarBsar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/textview_testbuydetail_profitText"
+        app:layout_constraintTop_toBottomOf="@id/textview_testbuydetail_profitText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_sarbsarprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+     android:text="@string/sarBsar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_profit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_profit"
+        app:layout_constraintTop_toTopOf="@id/textview_testbuydetail_sarbsarpriceText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_profitpercentageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+android:text="@string/profitPercent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_sarbsarpriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_sarbsarpriceText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_profitpercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+       android:text="@string/profitPercent"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_sarbsarprice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_sarbsarprice"
+        app:layout_constraintTop_toTopOf="@+id/textview_testbuydetail_profitpercentageText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/numberofstocks"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_profitpercentageText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_profitpercentageText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/numberofstocks"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_sarbsarprice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_profitpercentage"
+        app:layout_constraintTop_toTopOf="@id/textview_testbuydetail_numberText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_totalpriceDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/KhalesArzeshRoz"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_numberText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_numberText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_totalpriceDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/KhalesArzeshRoz"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_number"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_number"
+        app:layout_constraintTop_toTopOf="@+id/textview_testbuydetail_totalpriceDayText" />
+
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_totalpricebuyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/bahayTamamShode"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_totalpriceDayText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_totalpriceDayText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_totalpricebuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan"
+        android:text="@string/bahayTamamShode"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_totalpriceDay"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_totalpriceDay"
+        app:layout_constraintTop_toTopOf="@+id/textview_testbuydetail_totalpricebuyText" />
+
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_averagepriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/AverageEndPrice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/view_testbuydetail_background"
+        app:layout_constraintStart_toEndOf="@id/textview_testbuydetail_pricedaytext"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_totalpricebuyText" />
+
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_averageprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/AverageEndPrice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_averagepriceText"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_averagepriceText"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_averagepriceText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_pricedaytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/yekan"
+
+        android:text="@string/todayPrice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/textview_testbuydetail_averagepriceText"
+        app:layout_constraintStart_toStartOf="@+id/view_testbuydetail_background"
+        app:layout_constraintTop_toTopOf="@+id/textview_testbuydetail_averagepriceText" />
+
+    <TextView
+        android:id="@+id/textview_testbuydetail_priceday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/todayPrice"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textview_testbuydetail_pricedaytext"
+        app:layout_constraintStart_toStartOf="@+id/textview_testbuydetail_pricedaytext"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_pricedaytext" />
+
+    <Button
+        android:id="@+id/button_testbuydetail_sell"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_button_background_1"
+        android:fontFamily="@font/yekan"
+        android:text="@string/sell"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize_18Sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_testbuydetail_background"
+
+        app:layout_constraintStart_toStartOf="@+id/view_testbuydetail_background"
+        app:layout_constraintTop_toBottomOf="@+id/textview_testbuydetail_averageprice" />
+
+    <TextView
+        android:id="@+id/textView_testbuydetail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/yekan"
+        android:text="@string/buydate"
+        app:layout_constraintBottom_toBottomOf="@+id/view_testbuydetail_background"
+        app:layout_constraintEnd_toEndOf="@+id/view_testbuydetail_background"
+        app:layout_constraintStart_toStartOf="@+id/view_testbuydetail_background" />
+
+    <Button
+        android:id="@+id/button_testbuydetail_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="@+id/view_testbuydetail_background"
+        app:layout_constraintTop_toTopOf="@+id/view_testbuydetail_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

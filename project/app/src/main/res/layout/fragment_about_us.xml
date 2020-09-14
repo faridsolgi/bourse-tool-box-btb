@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="@color/white"
+    tools:context=".main.Fragments.AboutUsFragment">
+
+    <View
+        android:id="@+id/View_about_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue_700"
+        app:layout_constraintHeight_min="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView_about_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_about_imageLogo"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@id/View_about_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View_about_background" />
+
+    <TextView
+        android:id="@+id/textView_about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/b_titr"
+        android:text="@string/AboutUs"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/textView_about_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View_about_background"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_about_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/yekan"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/AboutUs_description"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView_about_Aparat"
+        app:layout_constraintTop_toBottomOf="@id/textView_about_title" />
+    <TextView
+        android:id="@+id/textView_about_Aparat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/yekan"
+        android:singleLine="true"
+        android:text="@string/Aparat"
+        android:textColor="@color/blue_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView_about_Tsetmc"
+        app:layout_constraintTop_toBottomOf="@id/textView_about_description" />
+    <TextView
+        android:id="@+id/textView_about_Tsetmc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="24dp"
+        android:singleLine="true"
+        android:fontFamily="@font/yekan"
+        android:text="@string/Tsetmc"
+        android:textColor="@color/blue_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView_about_Isna"
+        app:layout_constraintTop_toBottomOf="@id/textView_about_Aparat" />
+    <TextView
+        android:id="@+id/textView_about_Isna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/yekan"
+        android:text="@string/Isna"
+        android:singleLine="true"
+        android:textColor="@color/blue_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_about_instagram"
+        app:layout_constraintTop_toBottomOf="@id/textView_about_Tsetmc" />
+
+    <Button
+        android:id="@+id/button_about_mail"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_about_instagram"
+        app:layout_constraintTop_toTopOf="@+id/button_about_instagram" />
+
+    <Button
+        android:id="@+id/button_about_instagram"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_instagram"
+        app:layout_constraintBottom_toTopOf="@+id/textView_about_version"
+        app:layout_constraintEnd_toStartOf="@id/button_about_mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_about_Isna" />
+<Button
+    android:id="@+id/button_about_back"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:background="@drawable/ic_baseline_arrow_back_24"
+    android:backgroundTint="@color/white"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="24dp"
+    android:layout_marginStart="24dp"
+    />
+
+    <TextView
+        android:id="@+id/textView_about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/yekan"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_about_instagram" />
+</androidx.constraintlayout.widget.ConstraintLayout>
