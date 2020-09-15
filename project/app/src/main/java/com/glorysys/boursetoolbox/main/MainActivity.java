@@ -41,7 +41,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-//farid write last change for test
+//farid write last change for test 2
 public class MainActivity extends AppCompatActivity implements ArzeWebApi.getApiArzeCallBack, SplashFragment.interface_splash {
     long time = 0;
    private ConstraintLayout constraintLayout;
