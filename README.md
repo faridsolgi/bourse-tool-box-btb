@@ -42,8 +42,9 @@
 
 و …. 
 
-<img src="https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-094317296018.jpg"  width=576  
-     height="409"/> <img src="https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-581908358550.jpg" width=576    height="409"/>
+<p><img src="https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-094317296018.jpg"  width=576  
+     height="409"/> 
+     <img src="https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-581908358550.jpg" width=576    height="409"/></p>
 ![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-618849603464%20(1).jpg)
 ![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-618849603464.jpg)
 ![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-744625370597.jpg)
