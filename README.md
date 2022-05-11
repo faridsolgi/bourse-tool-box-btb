@@ -42,7 +42,7 @@
 
 و …. 
 
-![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-094317296018.jpg)
+![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-094317296018.jpg =576x409 )
 ![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-581908358550.jpg)
 ![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-618849603464%20(1).jpg)
 ![farid solgi - btb](https://github.com/faridsolgi/bourse-tool-box-btb/blob/master/project/screenShots/com.glorysys.boursetoolbox-618849603464.jpg)
